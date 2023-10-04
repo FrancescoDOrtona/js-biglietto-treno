@@ -14,6 +14,7 @@ console.log(age)
 //     - Dichiarare la variabile del prezzo per km e del prezzo base
 //     - Calcolare il prezzo base del biglietto
 const priceForKm = 0.21
+let ticketPrice
 const ticketBasePrice = parseFloat(km * priceForKm) 
 console.log(ticketBasePrice)
 
@@ -21,9 +22,10 @@ console.log(ticketBasePrice)
 //     - Dichiarare le variabili per i prezzi scontati
 //     - Calcolare lo sconto del 20% per i minorenni
 //     - Calcolare lo sconto del 40% per gli over 65
+const discountUnder18 = ticketBasePrice * 0.2
+const discountOver65 = ticketBasePrice * 0.4
+
 // - Stabilire il prezzo nel caso in cui ci sia uno sconto
-//     - Dichiarare la variabile per il prezzo scontato per i minorenni
-//     - Dichiarare la variabile per il prezzo scontato per gli over 65
 //         - SE l'utente è minorenne prezzo base - 20%
 //         - ALTRIMENTI SE l'utente è over 65 prezzo base -40%
 //         - ALTRIMENTI prezzo base

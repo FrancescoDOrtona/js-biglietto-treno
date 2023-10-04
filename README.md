@@ -12,8 +12,6 @@
     - Calcolare lo sconto del 20% per i minorenni
     - Calcolare lo sconto del 40% per gli over 65
 - Stabilire il prezzo nel caso in cui ci sia uno sconto
-    - Dichiarare la variabile per il prezzo scontato per i minorenni
-    - Dichiarare la variabile per il prezzo scontato per gli over 65
         - SE l'utente è minorenne prezzo base - 20%
         - ALTRIMENTI SE l'utente è over 65 prezzo base -40%
         - ALTRIMENTI prezzo base
