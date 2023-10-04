@@ -2,11 +2,21 @@
 
 // - Chiedere all'utente i km che vuole percorrere
 //     - Dichiarare la variabile ed il prompt
+const km = parseFloat(prompt('Inserisci i Km Totali da percorrere'))
+console.log(km)
+
 // - Chiedere all'utente l'età
 //     - Dichiarare la variabile ed il prompt
+const age = parseInt(prompt('Inserisci l\'età del passeggero'))
+console.log(age)
+
 // - Calcolare il prezzo base del biglietto in base ai km da percorrere (0.21€ a km)
-//     - Dichiarare la variabile del prezzo base
+//     - Dichiarare la variabile del prezzo per km e del prezzo base
 //     - Calcolare il prezzo base del biglietto
+const priceForKm = 0.21
+const ticketBasePrice = parseFloat(km * priceForKm) 
+console.log(ticketBasePrice)
+
 // - Calcolare il prezzo con lo sconto in base all'età
 //     - Dichiarare le variabili per i prezzi scontati
 //     - Calcolare lo sconto del 20% per i minorenni
