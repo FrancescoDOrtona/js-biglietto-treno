@@ -15,7 +15,7 @@ console.log(age)
 //     - Calcolare il prezzo base del biglietto
 const priceForKm = 0.21
 let ticketPrice
-const ticketBasePrice = parseFloat(km * priceForKm).toFixed(2) 
+const ticketBasePrice = parseFloat(km * priceForKm) 
 console.log(ticketBasePrice)
 
 // - Calcolare il prezzo con lo sconto in base all'età
@@ -36,9 +36,9 @@ if (age<18){
 else if(age >= 65){
     ticketPrice = (ticketBasePrice - discountOver65).toFixed(2)
 }
-else{
-    ticketPrice = ticketBasePrice
-}
+
+ticketPrice = ticketBasePrice
+
 console.log(ticketPrice)
 
 // - Stampare il prezzo nel dom con 2 cifre dopo la virgola
