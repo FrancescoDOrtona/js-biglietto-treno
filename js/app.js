@@ -36,6 +36,9 @@ if (age<18){
     else if(age >= 65){
     ticketPrice = ticketBasePrice - discountOver65
 }
+else{
+    ticketPrice = ticketBasePrice
+}
 console.log(ticketPrice)
 
 // - Stampare il prezzo nel dom con 2 cifre dopo la virgola
