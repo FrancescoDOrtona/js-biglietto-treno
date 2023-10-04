@@ -48,3 +48,11 @@ const priceDomElement = document.getElementById('ticket__price')
 
 //     - Modificare l'innerHTML del tag con il valore della variabile prezzo biglietto
 priceDomElement.innerHTML = ticketPrice + ' ' + '\u20AC'
+
+// extra
+
+const userKmDomElement = document.getElementById('user__km')
+userKmDomElement.innerHTML = km
+
+const userAgeDomElement = document.getElementById('user__age')
+userAgeDomElement.innerHTML = age
