@@ -29,12 +29,12 @@ console.log(discountUnder18, discountOver65)
 // - Stabilire il prezzo nel caso in cui ci sia uno sconto
 //         - SE l'utente è minorenne prezzo base - 20%
 if (age<18){
-    ticketPrice = (ticketBasePrice - discountUnder18).toFixed(2)
+    ticketPrice = (ticketBasePrice - discountUnder18)
 }
 
 //         - ALTRIMENTI SE l'utente è over 65 prezzo base -40%   
 else if(age >= 65){
-    ticketPrice = (ticketBasePrice - discountOver65).toFixed(2)
+    ticketPrice = (ticketBasePrice - discountOver65)
 }
 
 ticketPrice = ticketBasePrice
@@ -47,7 +47,7 @@ console.log(ticketPrice)
 const priceDomElement = document.getElementById('ticket__price')
 
 //     - Modificare l'innerHTML del tag con il valore della variabile prezzo biglietto
-priceDomElement.innerHTML = ticketPrice + ' ' + '\u20AC'
+priceDomElement.innerHTML = ticketPrice.toFixed(2) + ' ' + '\u20AC'
 
 // extra
 
